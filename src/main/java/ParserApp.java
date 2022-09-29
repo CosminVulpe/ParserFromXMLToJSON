@@ -11,12 +11,13 @@ public class ParserApp {
         final String inputPath = ReadConfigProperties.readConfigProperties("inputPathFile");
         final String outputPath = ReadConfigProperties.readConfigProperties("outputPathFile");
 
+        // Name of the input file
         File inputFile = new File(inputPath.concat("PurchaseOrders.xml"));
         PurchaseOrder purchaseOrder = JAXB.unmarshal(inputFile, PurchaseOrder.class);
 
-
-        ObjectMapper objectMapper = new ObjectMapper();
+        // Name of the output file
         File outputFile = new File(outputPath.concat("temp.json"));
+        ObjectMapper objectMapper = new ObjectMapper();
         objectMapper
                 .writerWithDefaultPrettyPrinter()
                 .writeValue(outputFile, purchaseOrder);
