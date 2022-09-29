@@ -1,7 +1,6 @@
 package model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import sun.jvm.hotspot.debugger.Address;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -65,7 +64,7 @@ public class PurchaseOrder {
 
 
     public List<Item> getPurchaseItem() {
-        return purchaseItem.getItemList();
+        return purchaseItem.getListItems();
     }
 
     public void setPurchaseItem(PurchaseItem purchaseItem) {
