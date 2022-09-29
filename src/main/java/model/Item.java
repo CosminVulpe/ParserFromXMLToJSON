@@ -14,12 +14,15 @@ public class Item {
     @XmlAttribute(name = "PartNumber")
     @JsonProperty(value = "PartNumber")
     private String partNumber;
+
     @XmlElement(name = "ProductName")
     @JsonProperty(value = "ProductName")
     private String productName;
+
     @XmlElement(name = "Quantity")
     @JsonProperty(value = "Quantity")
     private Integer quantity;
+
     @XmlElement(name = "USPrice")
     @JsonProperty(value = "USPrice")
     private Double price;

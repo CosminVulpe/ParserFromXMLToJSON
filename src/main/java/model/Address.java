@@ -12,12 +12,15 @@ public class Address {
     @XmlAttribute(name = "Type")
     @JsonProperty(value = "Type")
     private String type;
+
     @XmlElement(name = "Name")
     @JsonProperty(value = "Name")
     private String name;
+
     @XmlElement(name = "Street")
     @JsonProperty(value = "Street")
     private String street;
+
     @XmlElement(name = "City")
     @JsonProperty(value = "City")
     private String city;

@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class ReadConfigProperties {
+
     private static final String configPropertiesPathFile = "src/main/resources/config.properties";
 
     public static String readConfigProperties(String propertyName) throws IOException {

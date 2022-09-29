@@ -13,15 +13,19 @@ public class PurchaseOrder {
 
     @XmlAttribute(name = "PurchaseOrderNumber")
     private String purchaseOrderNumber;
+
     @XmlAttribute(name = "OrderDate")
     @JsonProperty(value = "OrderDate")
     private String orderDate;
+
     @XmlElement(name = "Address")
     @JsonProperty(value = "Address")
     private List<Address> addressList;
+
     @XmlElement(name = "DeliveryNotes")
     @JsonProperty(value = "DeliveryNotes")
     private String deliveryNote;
+
     @XmlElement(name = "Items")
     @JsonProperty(value = "Items")
     private PurchaseItem purchaseItem;
@@ -61,7 +65,6 @@ public class PurchaseOrder {
     public void setAddressList(List<Address> addressList) {
         this.addressList = addressList;
     }
-
 
     public List<Item> getPurchaseItem() {
         return purchaseItem.getListItems();

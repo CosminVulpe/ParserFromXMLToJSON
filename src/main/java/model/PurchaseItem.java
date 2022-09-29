@@ -4,6 +4,7 @@ import javax.xml.bind.annotation.XmlElement;
 import java.util.List;
 
 public class PurchaseItem {
+
     @XmlElement(name="Item")
     private List<Item> itemList;
 

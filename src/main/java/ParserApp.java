@@ -7,6 +7,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class ParserApp {
+
     public static void main(String[] args) throws IOException {
         final String inputPath = ReadConfigProperties.readConfigProperties("inputPathFile");
         final String outputPath = ReadConfigProperties.readConfigProperties("outputPathFile");
