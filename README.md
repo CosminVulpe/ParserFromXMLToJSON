@@ -9,7 +9,7 @@
 ## General Functionality 
 - The application reads the XML file(s) from the input file located in the resources file.
 - The XML file(s) are processed with the help of XML annotations.
-- The JSON file(s) are exported in the output file located in the resources file.
+- The JSON file(s) are exported in the output file located in the resources file with the help of the library JAXB.
 
 
 ## How to install
